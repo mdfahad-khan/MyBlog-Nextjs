@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  width: 100px;
+  border: none;
+  padding: 14px;
+  background-color: crimson;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  .button {
+    padding: 12px;
+    font-size: 14px;
+    justify-content: flex-end;
+  }
+}
+@media screen and (max-width: 768px) {
+  .button {
+    padding: 10px;
+    font-size: 12px;
+    justify-content: flex-end;
+  }
+}
+@media screen and (max-width: 640px) {
+  .button {
+    padding: 10px;
+    font-size: 12px;
+    justify-content: space-between;
+  }
+  .container {
+    justify-content: space-between;
+  }
+}
