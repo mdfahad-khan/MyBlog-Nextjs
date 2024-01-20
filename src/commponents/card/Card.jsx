@@ -6,7 +6,7 @@ const Card = () => {
   return (
     <div className={styles.container}>
       <div className={styles.imageContainer}>
-        <Image src="/p1.jpeg" alt="p1" fill className={styles.image} />
+        <Image src="/kuakata.jpg" alt="p1" fill className={styles.image} />
       </div>
       <div className={styles.textContainer}>
         <div className={styles.details}>
@@ -14,7 +14,7 @@ const Card = () => {
           <span className={styles.category}>Travel</span>
         </div>
         <Link href="/">
-          <h1>Lorem ipsum dolor sit amet</h1>
+          <h1>Shorty visit at Kuakata</h1>
         </Link>
         <p className={styles.desc}>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis,

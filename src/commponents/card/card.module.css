@@ -10,7 +10,7 @@
   position: relative;
 }
 .image {
-  object-fit: cover;
+  object-fit:fill;
 }
 
 .textContainer {

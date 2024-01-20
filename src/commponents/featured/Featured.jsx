@@ -4,22 +4,19 @@ import styles from "./Featured.module.css";
 export const Featured = () => {
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>
-        <b>Hey, my name is fahad</b> Discover my stories and creative idea.
-      </h1>
+      <h6 className={styles.title}>
+        <b className={styles.name}>Hey, my name is fahad</b>Travel whenever you can.Life is too short to think twice.
+      </h6>
       <div className={styles.post}>
         <div className={styles.imgContainer}>
-          <Image src="/p1.jpeg" alt="picture" fill className={styles} />
+          <Image src="/haour1.jpg" alt="picture" fill className={styles} />
         </div>
         <div className={styles.textContainer}>
           <h1 className={styles.postTitle}>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.{" "}
+          Shorty visit at Targor Haor with my friends.{" "}
           </h1>
           <p className={styles.postDesc}>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus
-            eaque quod debitis consequatur officia ab voluptatum! Expedita,
-            perspiciatis velit ratione incidunt tempora consequuntur autem modi
-            aperiam quo aliquid molestias vero?
+          Tanguar haor, located in the Dharmapasha and Tahirpur upazilas of Sunamganj District in Bangladesh, is a unique wetland ecosystem of national importance and has come into international focus. The area of Tanguar haor including 46 villages within the haor is about 100 square kilometres of which 2,802.36 ha² is wetland.
           </p>
           <button className={styles.button}>Read More</button>
         </div>

@@ -8,14 +8,13 @@ export const Navbar = () => {
   return (
     <div className={styles.container}>
       <div className={styles.social}>
-        <Image src="/facebook.png" alt="facebook" width={24} height={24} />
-        <Image src="/instagram.png" alt="facebook" width={24} height={24} />
-        <Image src="/tiktok.png" alt="facebook" width={24} height={24} />
-        <Image src="/youtube.png" alt="facebook" width={24} height={24} />
+         <Image src="/logo1.png" alt="logo" width={62} height={40} />
+       
+        <h2 className={styles.blogTitle}>Fahadblog</h2>
       </div>
-      <div className={styles.logo}>fahadblog</div>
+      
       <div className={styles.links}>
-        <ThemeToggle />
+        {/* <ThemeToggle /> */}
         <Link href="/" className={styles.link}>
           Home
         </Link>
@@ -25,7 +24,7 @@ export const Navbar = () => {
         <Link href="/" className={styles.link}>
           About
         </Link>
-        <AuthLinks />
+        {/* <AuthLinks /> */}
       </div>
     </div>
   );
