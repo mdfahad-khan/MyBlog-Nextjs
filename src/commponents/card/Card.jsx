@@ -1,31 +1,44 @@
-import Image from "next/image";
-import Link from "next/link";
-import styles from "./card.module.css";
+"use client"
+import React from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+import styles from './card.module.css';
+import { useRouter } from 'next/navigation'; // Import useRouter hook from Next.js
 
-const Card = () => {
+const Card = ({ data }) => {
+  const { id, date, category, title, description, imageUrl } = data;
+  const router = useRouter(); // Initialize useRouter hook
+
+  const handleDetailsClick = (id) => {
+    router.push(`/ReadMore/${id}`); // Use router.push for navigation
+  };
+
   return (
     <div className={styles.container}>
       <div className={styles.imageContainer}>
-        <Image src="/kuakata.jpg" alt="p1" fill className={styles.image} />
+        <Image
+          src={imageUrl}
+          alt={title}
+          layout="responsive" objectFit="cover" objectPosition="center"
+          
+          className={styles.image}
+        />
       </div>
       <div className={styles.textContainer}>
         <div className={styles.details}>
-          <span className={styles.date}>11.02.2023 -</span>
-          <span className={styles.category}>Travel</span>
+          <span className={styles.date}>{date} -</span>
+          <span className={styles.category}>{category}</span>
         </div>
-        <Link href="/">
-          <h1>Shorty visit at Kuakata</h1>
+        <Link href={`/posts/${id}`}>
+          <h1 className={styles.title}>{title}</h1>
         </Link>
-        <p className={styles.desc}>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis,
-          similique. Quibusdam blanditiis saepe id minima nam quis consequuntur
-          architecto voluptatibus.
-        </p>
-        <Link href="/" className={styles.link}>
+        <p className={styles.description}>{description}</p>
+        <p className={styles.link} onClick={() => handleDetailsClick(id)}>
           Read More
-        </Link>
+        </p>
       </div>
     </div>
   );
 };
+
 export default Card;

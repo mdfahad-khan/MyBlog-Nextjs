@@ -1,5 +1,7 @@
 import Image from "next/image";
 import styles from "./Featured.module.css";
+import haour from "/public/haour1.jpg";
+
 
 export const Featured = () => {
   return (
@@ -9,7 +11,7 @@ export const Featured = () => {
       </h6>
       <div className={styles.post}>
         <div className={styles.imgContainer}>
-          <Image src="/haour1.jpg" alt="picture" fill className={styles} />
+          <Image src={haour} alt="picture" fill className={styles} />
         </div>
         <div className={styles.textContainer}>
           <h1 className={styles.postTitle}>

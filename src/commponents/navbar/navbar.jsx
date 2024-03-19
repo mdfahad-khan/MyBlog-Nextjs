@@ -8,7 +8,7 @@ export const Navbar = () => {
   return (
     <div className={styles.container}>
       <div className={styles.social}>
-         <Image src="/logo1.png" alt="logo" width={62} height={40} />
+         <Image src="/logo1.png" alt="logo" width={50} height={40} />
        
         <h2 className={styles.blogTitle}>Fahadblog</h2>
       </div>

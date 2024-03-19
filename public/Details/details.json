@@ -1,0 +1,47 @@
+{
+    "posts": [
+      {
+        "id": 1,
+        "description": "Beautiful landscapes",
+        "images": [
+          "https://example.com/image1.jpg",
+          "https://example.com/image2.jpg",
+          "https://example.com/image3.jpg"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "Adorable animals",
+        "images": [
+          "https://example.com/image4.jpg",
+          "https://example.com/image5.jpg"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "Delicious food",
+        "images": [
+          "https://example.com/image6.jpg",
+          "https://example.com/image7.jpg",
+          "https://example.com/image8.jpg"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "Cityscape at night",
+        "images": [
+          "https://example.com/image9.jpg",
+          "https://example.com/image10.jpg"
+        ]
+      },
+      {
+        "id": 5,
+        "description": "Cute kittens",
+        "images": [
+          "https://example.com/image11.jpg",
+          "https://example.com/image12.jpg"
+        ]
+      }
+    ]
+  }
+  

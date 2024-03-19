@@ -2,7 +2,7 @@
   margin-top: 20px;
 }
 .title {
-  font-size: 42px;
+  font-size: 32px;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -15,6 +15,7 @@
   display: flex;
   align-items: center;
   gap: 50px;
+  width: 1200px;
 }
 .imgContainer {
   flex: 1;
@@ -26,12 +27,14 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  text-align: justify;
+  
 }
 .image {
   object-fit: cover;
 }
-.postTitleS {
-  font-size: 40px;
+.postTitle {
+  font-size: 30px;
 }
 .postDesc {
   font-size: 20px;
@@ -57,8 +60,17 @@
   .title {
     font-size: 44px;
   }
+  .post {
+    margin-top: 10px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
   .imgContainer {
-    display: none;
+    /* display: none; */
+    height: 500px;
+    position: relative;
   }
 }
 @media screen and (max-width: 768px) {
@@ -68,6 +80,52 @@
 }
 @media screen and (max-width: 640px) {
   .title {
-    font-size: 26px;
+    font-size: 20px;
+    gap: 5px;
+  }
+  .post {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    height: 600px;
+    width: 370px;
+  }
+  .imgContainer {
+    flex: 1;
+    height: 300px;
+    position:relative;
+    width: 100%;
+  }
+  .textContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: justify;
+  }
+  .postTitle {
+    font-size: 20px;
+  }
+  .container {
+    margin-top: 0px; /* It seems .container is not used, but if it is, adjust accordingly */
+  }
+  .image {
+    object-fit: cover; /* Make sure object-fit is applied to the image */
+    width: 100%; /* Use 100% width to ensure responsiveness */
+    height: 100%; /* Use 100% height to ensure responsiveness */
+  }
+  .button {
+    padding: 10px 14px;
+    border: none;
+    border-radius: 5px;
+    width: max-content;
+    background-color: rgb(93, 140, 243);
+    font-size: 16px;
+    color:white;
+  }
+  .button:hover{
+    background-color: rgb(20, 95, 88);
   }
 }

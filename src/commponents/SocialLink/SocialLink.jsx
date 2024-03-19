@@ -1,7 +1,7 @@
 import styles from "./SocialLink.module.css";
 // eslint-disable-next-line no-unused-vars
 import React from "react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 
@@ -11,22 +11,22 @@ const SocialLink = () => {
       id: 1,
       child: (
         <>
-          Linkedin
-          <FaLinkedin size={30} />{" "}
+          Facebook
+          <FaFacebook size={30} />{" "}
         </>
       ),
-      href: "https://www.linkedin.com/in/md-fahad-khan/",
+      href: "https://www.facebook.com/md.fahadkhan.9889",
      
     },
     {
       id: 2,
       child: (
         <>
-          Github
-          <FaGithub size={30} />{" "}
+          Instragram
+          <FaInstagram size={30} />{" "}
         </>
       ),
-      href: "https://github.com/EvanAhmedFahad",
+      href: "https://www.facebook.com/md.fahadkhan.9889",
       
     },
     {
@@ -44,11 +44,11 @@ const SocialLink = () => {
       id: 4,
       child: (
         <>
-          Resume
-          <BsFillPersonLinesFill size={30} />{" "}
+          Linkedin
+          <FaLinkedin size={30} />{" "}
         </>
       ),
-      href: "../../public/Fahad(AIUB).pdf",
+      href: "https://www.linkedin.com/in/md-fahad-khan/",
      
       download: true,
     },

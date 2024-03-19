@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: space-between;
   height: 100px;
+  margin-left: 0;
 }
 .social {
   display: flex;
@@ -61,10 +62,37 @@
   }
 }
 @media screen and (max-width: 640px) {
-  .link {
-    display: none;
-  }
+  
   .links {
     justify-content: flex-end;
+    gap: 8px;
+    font-size: 16px;
+    margin-left: 25px;
+  }
+  
+  .logo {
+    flex: 1;
+    font-size: 5px;
+    font-weight: bold;
+    text-align:right;
+  }
+  .blogTitle {
+    font-size: 16px; 
+    font-weight: bold; 
+    color: #164667;
+    margin-top: 10px; 
+    
+   
+    
+  }
+  .link:hover{
+    color:crimson;
+    font-size:18px ;
+  
+  }
+  .social {
+    display: flex;
+    gap: 5px;
+    flex: 1;
   }
 }

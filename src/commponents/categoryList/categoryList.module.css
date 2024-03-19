@@ -38,6 +38,11 @@
   .category1 {
     width: 100%;
   }
+
+  .title{
+    font-size: 20px;
+    margin-top: 20px;
+  }
 }
 .category1.style {
   background-color: #57c4ff31;

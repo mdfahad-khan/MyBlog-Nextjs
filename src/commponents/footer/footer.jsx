@@ -7,7 +7,7 @@ export const Footer = () => {
     <div className={styles.container}>
       <div className={styles.info}>
         <div className={styles.logo}>
-          <Image src="/logo.png" alt="logo" width={50} height={50} />
+          <Image src="/logo1.png" alt="logo" width={50} height={50} />
           <h1 className={styles.logoText}>FahadEvan</h1>
         </div>
         <p className={styles.desc}>
@@ -17,12 +17,12 @@ export const Footer = () => {
         </p>
         <div className={styles.icons}>
           <Image src="/facebook.png" alt="" width={18} height={18} />
-          <Image src="/facebook.png" alt="" width={18} height={18} />
-          <Image src="/facebook.png" alt="" width={18} height={18} />
+          <Image src="/instagram.png" alt="" width={18} height={18} />
+          <Image src="/youtube.png" alt="" width={18} height={18} />
           <Image src="/facebook.png" alt="" width={18} height={18} />
         </div>
       </div>
-      <div className={styles.links}>
+      {/* <div className={styles.links}>
         <div className={styles.list}>
           <span className={styles.listTitle}>Links</span>
           <Link href="/">home</Link>
@@ -47,7 +47,7 @@ export const Footer = () => {
             <Link href="/">coding</Link>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
